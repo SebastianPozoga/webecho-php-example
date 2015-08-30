@@ -65,5 +65,8 @@ function getWebecho()
 # Install
 
 ```
-clone
+git clone https://github.com/SebastianPozoga/webecho-php-example.git
+cd webecho-php-example
+composer install
+php app/console server:run
 ```
