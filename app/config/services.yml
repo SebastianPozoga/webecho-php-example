@@ -1,0 +1,9 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/book/service_container.html
+parameters:
+    webservice.class: AppBundle\Service\WebechoService
+
+services:
+  webecho:
+    class: %webservice.class%
+    arguments: [%webecho_host%, %webecho_token%]
