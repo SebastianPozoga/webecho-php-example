@@ -44,21 +44,21 @@ public function indexAction(Request $request)
 ```
 class WebechoService
 {
-private $webecho = null;
+    private $webecho = null;
 
-function __construct($host, $token)
-{
-    $config = new \Webecho\WebechoConfig([
-        'host' => $host,
-        'token' => $token
-    ]);
-    $this->webecho = new \Webecho\Webecho($config);
-}
+    function __construct($host, $token)
+    {
+        $config = new \Webecho\WebechoConfig([
+            'host' => $host,
+            'token' => $token
+        ]);
+        $this->webecho = new \Webecho\Webecho($config);
+    }
 
-function getWebecho()
-{
-    return $this->webecho;
-}
+    function getWebecho()
+    {
+        return $this->webecho;
+    }
 }
 ```
 
